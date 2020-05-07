@@ -10,6 +10,10 @@ namespace DependencyInjection
     {
         static void Main(string[] args)
         {
+            var notficationService = new NotificationService();
+            var user = new User("Padam",notficationService);
+            user.changeUsername("Adam");
+            Console.ReadLine();
         }
     }
 }
